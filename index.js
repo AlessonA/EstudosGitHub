@@ -23,8 +23,7 @@ let scrape = async () => { // crie uma função assíncrona que irá realizar o 
     return el.map((a) => a.getAttribute('href'))
   }
   )
-  
-  //browser.close(); // fecha o browser, indicando que finalizamos o scraping
+  browser.close(); // fecha o browser, indicando que finalizamos o scraping
  
   return videos; // no momento, não desejamos retornar nada. Por isso, return []
 };
